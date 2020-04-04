@@ -1,0 +1,27 @@
+<script>
+    let date = new Date("2020-08-01 12:22:41") - new Date("2020-02-20 23:19:01");
+    let year= Math.trunc(date / (1000*3600*24*365));
+    let yearRemainder= date % (1000*3600*24*365);
+
+    let month= Math.trunc(yearRemainder/(1000*3600*24*365/12));
+    let monthRemainder= ((yearRemainder) % (1000*3600*24*365/12));
+
+    let day= Math.trunc(monthRemainder/(1000*3600*24));
+    let dayRemainder= (monthRemainder % (1000*3600*24));
+
+    let hour= Math.trunc(dayRemainder/(1000*3600));
+    let hourRemainder= (dayRemainder % (1000*3600));
+
+    let minute= Math.trunc(hourRemainder/(1000*60));
+    let minuteRemainder= (hourRemainder % (1000*60));
+
+    let second= Math.trunc(hourRemainder/(1000));
+    let secondRemainder= (hourRemainder % (1000));
+
+    alert(year);
+    alert(month);
+    alert(day);
+    alert(hour);
+    alert(minute);
+    alert(second);
+</script>

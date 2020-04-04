@@ -1,0 +1,9 @@
+<script>
+    function addMinute(min, date){
+        let now = new Date(date);
+        now.setMinutes(now.getMinutes() + min); 
+        now = new Date(now); 
+        return now;
+    };
+    alert(addMinute(30, '2014-10-2'));
+</script>
