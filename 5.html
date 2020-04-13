@@ -1,0 +1,11 @@
+<script src="./moment.js"></script>
+<script src="./jalali-moment.js"></script>
+    <script>
+
+        function convertDate(date) {
+            return moment(date, 'YYYY/M/D').locale('fa').format('ddd، ll')
+        }
+
+        alert(convertDate('2020/03/02'))
+        
+    </script>
